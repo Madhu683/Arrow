@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".QuestionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/ques_num"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@drawable/question_num_bg"
+            android:fontFamily="@font/quantico"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            android:text="1/10"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/linear_q"/>
+
+        <LinearLayout
+            android:id="@+id/linear_q"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ques_num">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/quantico"
+                android:gravity="center"
+                android:text="Question"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_b"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_q">
+
+            <RadioGroup
+                android:id="@+id/radios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/quantico"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:text="Option 1"
+                    android:button="@null"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="18sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/quantico"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:text="Option 2"
+                    android:button="@null"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="18sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/quantico"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:text="Option 3"
+                    android:button="@null"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="18sp" />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/quantico"
+                    android:padding="16dp"
+                    android:textAlignment="center"
+                    android:text="Option 4"
+                    android:button="@null"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/option5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btns"
+                    android:elevation="3dp"
+                    android:padding="16dp"
+                    android:text="Previous"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/quantico"
+                    android:layout_weight="1"
+
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/option6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btns"
+                    android:elevation="3dp"
+                    android:padding="16dp"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/quantico"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

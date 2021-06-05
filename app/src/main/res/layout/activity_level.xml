@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LevelActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_lev"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <GridView
+        android:id="@+id/levelGridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

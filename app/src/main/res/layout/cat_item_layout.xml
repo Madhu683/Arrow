@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:background="@drawable/cat_item_bg"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:elevation="20dp"
+    android:layout_margin="50dp"
+    >
+
+    <TextView
+        android:id="@+id/catName"
+        android:text="Number System"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ScoreActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCORE"
+        android:textColor="@color/white"
+        android:fontFamily="@font/quantico"
+        android:textSize="32sp"
+        android:layout_margin="16dp"/>
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center">
+
+         <ProgressBar
+             android:id="@+id/scorebar"
+             android:layout_width="250dp"
+             android:layout_height="250dp"
+             android:indeterminateOnly="false"
+
+             android:max="100"
+             android:progressDrawable="@drawable/custom_progressbar_bg"
+
+             />
+
+         <TextView
+             android:id="@+id/score"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/quantico"
+             android:text="3/10"
+             android:textColor="@color/white"
+             android:textSize="36sp"
+             android:layout_centerInParent="true"/>
+
+     </RelativeLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/answers_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Answers"
+        android:fontFamily="@font/quantico"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/score_btn"
+        android:textColor="@color/black"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Done"
+        android:fontFamily="@font/quantico"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/score_btn"
+        android:textColor="@color/black"
+        />
+
+
+
+
+</LinearLayout>

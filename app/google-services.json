@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "887976550542",
+    "firebase_url": "https://arrow-quiz-7c593-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "arrow-quiz-7c593",
+    "storage_bucket": "arrow-quiz-7c593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887976550542:android:157c96e5458b03cfe1a9df",
+        "android_client_info": {
+          "package_name": "com.example.arrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887976550542-f8k831m236memqllv5jm7i99k5u3lk2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arrow",
+            "certificate_hash": "37b3f8cf8cbc6106d96099f27654a8b8362c5a0c"
+          }
+        },
+        {
+          "client_id": "887976550542-0m76eag9cfgs9kir880kfnfn194a79ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv9NbpZQCZeiSfPdTkDgr0gBK5zUElZFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887976550542-0m76eag9cfgs9kir880kfnfn194a79ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
